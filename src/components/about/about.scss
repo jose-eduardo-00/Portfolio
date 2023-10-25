@@ -1,0 +1,14 @@
+.about {
+    background-color: #21272f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    p {
+        width: 50%;
+    }
+
+    img {
+        border-radius: 10%;
+    }
+}

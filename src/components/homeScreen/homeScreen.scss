@@ -1,0 +1,28 @@
+.home-screen {
+    background-color: #21272f;
+    height: 100vh;
+
+    main {
+        height: 80%;
+
+        .home-screen-presentation {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            h2 {
+                font-size: 30px;
+                font-family: 'Poppins-Bold', sans-serif;
+
+                
+            }
+
+            .name {
+                font-size: 60px;
+                font-family: 'Poppins-Black', sans-serif;
+            }
+        }
+    }
+}

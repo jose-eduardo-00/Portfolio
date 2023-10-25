@@ -1,10 +1,9 @@
-import { Header } from "../components/header/header"
-
+import { HomeScreen } from "../components/homeScreen/homeScreen"
 
 const Home = () => {
     return (
         <>
-            <Header />
+            <HomeScreen />
         </>
     )
 }

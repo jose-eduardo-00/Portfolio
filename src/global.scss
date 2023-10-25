@@ -2,19 +2,41 @@
     font-family: 'Poppins-Light';
     src: local('Poppins'), url(./fonts/Poppins/Poppins-Light.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'Poppins-Bold';
     src: local('Poppins'), url(./fonts/Poppins/Poppins-Bold.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'Poppins-black';
     src: local('Poppins'), url(./fonts/Poppins/Poppins-Black.ttf) format('truetype');
+}
+
+body::-webkit-scrollbar {
+    width: 18px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #171c23;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #31393d;
+    border-radius: 20px;
+    border: 4px solid #171c23;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #171c23 #31393d;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 
 ul {
