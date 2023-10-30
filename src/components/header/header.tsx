@@ -5,9 +5,10 @@ const Header = () => {
         <header className="header">
             <nav className='navigation'>
                 <ul>
-                    <li>about</li>
-                    <li>works</li>
-                    <li>skills</li>
+                    <li><a href='#about'>About</a></li>
+                    <li><a href='#works'>Works</a></li>
+                    <li><a href='#skills'>Skills</a></li>
+                    <li><a href='#contacts'>Contacts</a></li>
                 </ul>
             </nav>
         </header>

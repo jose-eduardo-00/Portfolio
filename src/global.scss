@@ -1,3 +1,12 @@
+:root {
+    --primary: #171c23;
+    --secondary: #21272f;
+    --tertiary: #88949b;
+    --alcohol: #f0fcf9;
+    --ruby: #29d882;
+    --secondaryRuby: #00bd95;
+}
+
 @font-face {
     font-family: 'Poppins-Light';
     src: local('Poppins'), url(./fonts/Poppins/Poppins-Light.ttf) format('truetype');
@@ -30,15 +39,24 @@ body::-webkit-scrollbar-thumb {
 body {
     scrollbar-width: thin;
     scrollbar-color: #171c23 #31393d;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #fff;
 }
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }

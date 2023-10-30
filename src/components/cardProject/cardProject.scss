@@ -1,0 +1,123 @@
+.project-card {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 90px;
+    
+    .project-title {
+        color: var(--alcohol);
+        font-family: 'Poppins-bold';
+        font-size: 35px;
+    }
+
+    .div-anchor {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Poppins-bold';
+
+        a {
+            padding: 10px 20px;
+            background-color: var(--secondaryRuby);
+            border-radius: 10px;
+            transition: all .6s;
+        }
+
+        a:hover {
+            box-shadow: 0px 0px 10px 4px var(--secondaryRuby);
+        }
+    }
+
+    .project-img {
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .text-about-project {
+        color: #fff;
+        font-family: 'Poppins-Light';
+        text-align: center;
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .project-languages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        border-radius: 10px;
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: var(--secondary);
+            box-shadow: 0px 0px 14px 4px var(--primary);
+    
+            &.html {
+                color: #e44810;
+            }
+    
+            &.css {
+                color: #0099ff;
+            }
+    
+            &.js {
+                color: #FFD600;
+            }
+    
+            &.react {
+                color: #4ddbff;
+            }
+    
+            &.ts {
+                width: 90px;
+                height: 90px;
+            }
+    
+            &.sass {
+                color: #F06292;
+            }
+    
+            &.jest {
+                width: 90px;
+                height: 90px;
+                color: #FC573B;
+            }
+    
+            &.git {
+                color: #F4511E;
+            }
+    
+            &.github {
+                color: var(--alcohol);
+            }
+
+            &.styled {
+                width: 90px;
+                height: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 60px;
+            }
+
+            &.poke-api {
+                width: 200px;
+                height: 90px;   
+            }
+
+            &.github-api {
+                width: 150px;
+                height: 90px;
+            }
+        }
+    }
+}

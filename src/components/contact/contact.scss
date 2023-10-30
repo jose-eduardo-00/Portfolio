@@ -1,0 +1,46 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        padding: 5px;
+        transition: all .6s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &.email {
+            background-color: #1e90ff;
+        }
+
+        &.whatsapp {
+            background-color: #25d366;
+        }
+
+        &.linkedin {
+            background-color: #0077b5;
+        }
+
+        &.github {
+            color: var(--alcohol);
+            background-color: var(--secondary);
+        }
+
+        &.instagram {
+            background: #d6249f;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        }
+    }
+
+    .contact-title {
+        color: var(--alcohol);
+        font-family: 'Poppins-bold';
+        font-size: 20px;
+    }
+}

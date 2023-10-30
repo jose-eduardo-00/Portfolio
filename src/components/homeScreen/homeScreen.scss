@@ -1,5 +1,5 @@
 .home-screen {
-    background-color: #21272f;
+    background-color: var(--secondary);
     height: 100vh;
 
     main {
@@ -13,13 +13,21 @@
             justify-content: center;
             
             h2 {
-                font-size: 30px;
+                font-size: 35px;
                 font-family: 'Poppins-Bold', sans-serif;
-
+                color: var(--ruby);
+                text-shadow: 0 0 0.2em var(--ruby);
                 
+                span {
+                    font-family: 'Poppins-Bold', sans-serif;
+                    font-size: 25px;
+                    text-shadow: none;
+                    color: var(--alcohol);
+                }
             }
-
+            
             .name {
+                color: var(--alcohol);
                 font-size: 60px;
                 font-family: 'Poppins-Black', sans-serif;
             }

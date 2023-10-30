@@ -1,19 +1,20 @@
 .header {
-    background-color: #171c23;
+    background-color: var(--primary);
     padding: 30px;
-    font-family: 'Poppins-Bold', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     .navigation {
+        font-family: 'Poppins-Bold', sans-serif;
+        
         ul {
             display: flex;
             gap: 30px;
-    
+            
             li {
+                color: var(--alcohol);    
                 border-bottom: 1px solid transparent;
-                cursor: pointer;
                 padding-bottom: 3px;
                 font-size: 24px;
             }
