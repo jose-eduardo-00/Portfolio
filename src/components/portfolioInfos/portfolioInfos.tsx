@@ -91,7 +91,7 @@ const projects = [
         name: 'Pokedex',
         linkGHPages: 'https://jose-eduardo-00.github.io/quest-react-avancado-pokemon/',
         linhkRepositorio: 'https://github.com/jose-eduardo-00/quest-react-avancado-pokemon.git',
-        img: <img src="./src/assets/img-test.png" alt="Foto do autor do site" className='project-img'></img>,
+        img: <img src="./src/assets/pokedex-desktop-img.png" alt="Foto do autor do site" className='project-img'></img>,
         text: 'Está aplicação mostra uma lista que inicialmente tem 10 cards de pokemons clicáveis mas que pode aumentar caso o usuário solicite, e ao clicar em um card o usuário é direcionado para uma seção para obter mais informações do pokemon do card clicado',
         skillsUtilizadas: [
                             <FontAwesomeIcon icon={faHtml5} className='icon html'/>, 
@@ -121,7 +121,7 @@ const projects = [
         name: 'API GitHub',
         linkGHPages: 'https://jose-eduardo-00.github.io/Quest-API-GitHub/',
         linhkRepositorio: 'https://github.com/jose-eduardo-00/Quest-API-GitHub.git',
-        img: <img src="./src/assets/img-test.png" alt="Foto do autor do site" className='project-img'></img>,
+        img: <img src="./src/assets/api-github-desktop-img.png" alt="Foto do autor do site" className='project-img'></img>,
         text: 'Está é uma aplicação que mostrar um input e botão buscar para procurar um usuário do GitHub através do seu nome de usuário, e apresenta na tela as informações do usuário buscado, os 10 primeiros repositórios e os seus 10 últimos eventos',
         skillsUtilizadas: [
                             <FontAwesomeIcon icon={faHtml5} className='icon html'/>, 

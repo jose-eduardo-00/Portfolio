@@ -14,14 +14,34 @@
             
             li {
                 color: var(--alcohol);    
-                border-bottom: 1px solid transparent;
-                padding-bottom: 3px;
                 font-size: 24px;
+                
+                a {
+                    padding-bottom: 3px;
+                    position: relative;
+                }
+
+                .underline::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    animation: underlineWidth .4s;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: var(--alcohol);
+                }
+
+                @keyframes underlineWidth {
+                    0% {
+                        width: 0;
+                    }50% {
+                        width: 100%;
+                    }
+                }
             }
 
-            li:hover {
-                border-color: #fff;
-            }
+            
         }
     }
 }
