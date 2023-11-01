@@ -7,14 +7,14 @@ import { ButtonCV } from "../components/buttonCV/buttonCV"
 
 const Home = () => {
     return (
-        <main className="home">
+        <>
             <HomeScreen />
             <About />
             <Works />
             <Skills />
             <Contacts />
             <ButtonCV />
-        </main>
+        </>
     )
 }
 

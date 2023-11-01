@@ -1,19 +1,29 @@
 .about {
     background-color: var(--secondary);
-    color: #fff;
+    color: var(--alcohol);
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
     padding: 20px 0 100px 0;
 
     p {
-        width: 50%;
+        max-width: 50%;
         font-size: 20px;
         font-family: 'Poppins-Light';
     }
 
     img {
+        max-width: 90%;
         border-radius: 10%;
+    }
+}
+
+@media (max-width: 426px) {
+    .about {
+        p {
+            max-width: 90%;
+        }
     }
 }

@@ -1,7 +1,7 @@
 import './buttonCV.scss'
 
 const ButtonCV = () => {
-    return <button className="cv">Download CV</button>
+    return <a href='#' download='curriculo.pdf'><button className="cv">Download CV</button></a>
 }
 
 export { ButtonCV }

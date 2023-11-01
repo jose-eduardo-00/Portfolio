@@ -1,6 +1,6 @@
 
 function hoverUnderline() {
-    document.querySelectorAll('.hover-before').forEach(e => {
+    document.querySelectorAll('.hover-underline').forEach(e => {
         e.addEventListener('mouseover', () => {
             e.classList.add('underline')
         })
@@ -10,4 +10,14 @@ function hoverUnderline() {
     })
 }
 
-export { hoverUnderline }
+
+function menuHamburguer() {
+    document.querySelectorAll('.hamburguer').forEach(e => {
+        e.classList.toggle('active')
+    })
+
+    const navigation: any = document.querySelector('.navigation')
+    navigation.classList.toggle('mobile')
+}
+
+export { hoverUnderline, menuHamburguer }

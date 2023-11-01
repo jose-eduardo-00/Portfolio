@@ -8,52 +8,52 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 const skills = [
     {
         name: 'HTML',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates quas consequatur repellat, quibusdam ratione incidunt placeat corrupti veniam. Magni consectetur voluptatibus quis facilis impedit aperiam deserunt saepe tempore velit?',
+        text: 'HTML ou Linguagem de Marcação de HiperTexto é o componente base da web e compõe a maior parte das páginas da internet e dos aplicativos online. O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para exibição em um navegador da Web. Hipertexto é um texto usado para fazer referência a outros textos, seja dentro de um único site ou entre sites. ',
         icon: <FontAwesomeIcon icon={faHtml5} className='icon html'/>
     },
     {
         name: 'CSS',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates quas consequatur repellat, quibusdam ratione incidunt placeat corrupti veniam. Magni consectetur voluptatibus quis facilis impedit aperiam deserunt saepe tempore velit?',
+        text: 'CSS é chamado de linguagem Cascading Style Sheet ou Folha de Estilo em Cascatas e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS tem a tarefa de separar o conteúdo do site de sua apresentação visual, alterando elementos como cor do texto, fonte e espaçamento entre blocos, assim como todo o aspecto estético de uma página.',
         icon: <FontAwesomeIcon icon={faCss3Alt} className='icon css' />
     },
     {
         name: 'JavaScript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates quas consequatur repellat, quibusdam ratione incidunt placeat corrupti veniam. Magni consectetur voluptatibus quis facilis impedit aperiam deserunt saepe tempore velit?',
+        text: 'O JavaScript é uma linguagem de programação interpretada e de alto nível. É uma linguagem de programação de comportamento que permite a criação de conteúdos dinâmicos, controle de mídias e animações para deixar seu site mais interativo e interessante. Junto com HTML e CSS é uma das três principais tecnologias da web.',
         icon: <FontAwesomeIcon icon={faJs} className='icon js' />
     },
     {
         name: 'React Js',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates quas consequatur repellat, quibusdam ratione incidunt placeat corrupti veniam. Magni consectetur voluptatibus quis facilis impedit aperiam deserunt saepe tempore velit?',
+        text: 'O ReactJS é uma das bibliotecas de JavaScript mais populares para desenvolvimento de aplicativos web ou para dispositivos móveis. Criado pelo Facebook, o React contém uma coleção de trechos de código de JavaScript reutilizáveis chamados componentes, usados para a construção da interface do usuário (UI).',
         icon: <FontAwesomeIcon icon={faReact} className='icon react' />
     },
     {
         name: 'TypeScript',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates quas consequatur repellat, quibusdam ratione incidunt placeat corrupti veniam. Magni consectetur voluptatibus quis facilis impedit aperiam deserunt saepe tempore velit?',
+        text: 'TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft que é uma extensão do JavaScript. Ela adiciona recursos avançados ao JavaScript, como a tipagem estática e interfaces, tornando mais fácil detectar e prevenir erros durante a fase de desenvolvimento.',
         icon: <img src='./src/assets/typescript.png' alt='icone do ts' className='icon ts' />
     },
     {
         name: 'Sass',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates quas consequatur repellat, quibusdam ratione incidunt placeat corrupti veniam. Magni consectetur voluptatibus quis facilis impedit aperiam deserunt saepe tempore velit?',
+        text: 'O SASS é um pré-processador CSS que adiciona recursos que não estão desponíveis no CSS como variáveis, mixins, funções e operações e outras opções. O SASS tem como objetivo tornar o processo de desenvolvimento mais simples e eficiente.',
         icon: <FontAwesomeIcon icon={faSass} className='icon sass' />
     },
     {
         name: 'Styled Components',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates quas consequatur repellat, quibusdam ratione incidunt placeat corrupti veniam. Magni consectetur voluptatibus quis facilis impedit aperiam deserunt saepe tempore velit?',
+        text: 'Styled components é uma biblioteca que possibilita escrever códigos CSS dentro do JavaScript. É uma biblioteca popular do ecossistema React que permite escrever estilos CSS de forma mais intuitiva e eficiente. Com Styled Components, os estilos são definidos diretamente no componente React, combinando o CSS e a lógica do componente em um só lugar.',
         icon: <div className='icon styled'>💅</div>
     },
     {
         name: 'Jest',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates quas consequatur repellat, quibusdam ratione incidunt placeat corrupti veniam. Magni consectetur voluptatibus quis facilis impedit aperiam deserunt saepe tempore velit?',
+        text: 'É um poderoso framework de testes em JavaScript com foco na simplicidade. Criado pelo Facebook, ele tem uma ótima interação com React, Vue.js, Angular e o próprio JavaScript.',
         icon: <img src='./src/assets/jest.png' alt='icone do jest' className='icon jest' />
     },
     {
         name: 'Git',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates quas consequatur repellat, quibusdam ratione incidunt placeat corrupti veniam. Magni consectetur voluptatibus quis facilis impedit aperiam deserunt saepe tempore velit?',
+        text: 'O Git é um sistema de controle de versão distribuído, serve para guardar as versões dos códigos feitos pelos programadores salvando qualquer modificação feita no código, para que possam baixar tanto a versão mais nova quanto uma versão anterior do código, assim facilitando o processo de compartilhamento de um projeto com outros programadores.',
         icon: <FontAwesomeIcon icon={faGitAlt} className='icon git' />
     },
     {
         name: 'GitHub',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptates quas consequatur repellat, quibusdam ratione incidunt placeat corrupti veniam. Magni consectetur voluptatibus quis facilis impedit aperiam deserunt saepe tempore velit?',
+        text: 'GitHub é uma plataforma de hospedagem de códigos de projetos usando o sistema de controle de versão chamado Git. Ele permite que desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso.',
         icon: <FontAwesomeIcon icon={faGithub} className='icon github' />
     }
 ]
@@ -106,7 +106,7 @@ const projects = [
         name: 'Portfolio',
         linkGHPages: '#',
         linhkRepositorio: 'https://github.com/jose-eduardo-00/Portfolio.git',
-        img: <img src="./src/assets/img-test.png" alt="Foto do autor do site" className='project-img'></img>,
+        img: <img src="./src/assets/portfolio-desktop-img.png" alt="Foto do autor do site" className='project-img'></img>,
         text: 'Este é um portfólio web que visa apresentar e mostrar algumas informações sobre o seus autor José Eduardo na seção about, mostrar os seus principais projetos e suas informações na seção works e as linguagens, mostrar as habilidades na seção skills e as formas de contato na seção contacts',
         skillsUtilizadas: [
                             <FontAwesomeIcon icon={faHtml5} className='icon html'/>, 

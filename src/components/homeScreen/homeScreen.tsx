@@ -9,7 +9,7 @@ const HomeScreen = () => {
                 <div className='home-screen-presentation'>
                     <h2>Welcome, <span>I am</span></h2>
                     <h1 className='name'>José Eduardo</h1>
-                    <h2 className='profession'>Front-End Developer</h2>
+                    <h2>Front-End Developer</h2>
                 </div>
             </main>
         </section>

@@ -34,3 +34,14 @@
         }
     }
 }
+
+@media (max-width: 426px) {
+    .home-screen {
+        padding-bottom: 80px;
+
+        .home-screen-presentation {
+            text-align: center;
+            padding: 6px;
+        }
+    }
+}

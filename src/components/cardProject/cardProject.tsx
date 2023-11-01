@@ -17,7 +17,7 @@ const CardProject = ({ name }: ICardProject) => {
                             <a href={e.linhkRepositorio} target='_blank' className='repository-anchor'>Link do Repositório</a>
                         </div>
                         {e.img}
-                        <p className='text-about-project'>{e.text}</p>
+                        <p className='project-text-about'>{e.text}</p>
                         <div className='project-languages'>
                             {e.skillsUtilizadas.map((a, index) => {
                                 return <div key={index}>{a}</div>
