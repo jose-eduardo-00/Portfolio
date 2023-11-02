@@ -1,3 +1,4 @@
+import imgTest from '../../assets/img-test.png'
 import './about.scss'
 
 const About = () => {
@@ -10,7 +11,7 @@ const About = () => {
                 interfaces mais criativas e organizadas e as melhores soluções para impactar positivamente os usuários.
                 Nas horas vagas eu gosto de jogar, ver filmes ou séries, assistir/ouvir podcast sobre tecnologia e cozinhar.  
             </p>
-            <img src="./src/assets/img-test.png" alt="Foto do autor do site"></img>
+            <img src={imgTest} alt="Foto do autor do site"></img>
         </section>
     )
 }
