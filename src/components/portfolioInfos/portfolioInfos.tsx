@@ -106,7 +106,7 @@ const projects = [
         name: 'Portfolio',
         linkGHPages: 'https://jose-eduardo-00.github.io/Portfolio/',
         linhkRepositorio: 'https://github.com/jose-eduardo-00/Portfolio.git',
-        img: <img src="../../assets/portfolio-desktop-img.png" alt="Foto do projeto Portfolio" className='project-img'></img>,
+        img: <img src="/src/assets/portfolio-desktop-img.png" alt="Foto do projeto Portfolio" className='project-img'></img>,
         text: 'Este é um portfólio web que visa apresentar e mostrar algumas informações sobre o seus autor José Eduardo na seção about, mostrar os seus principais projetos e suas informações na seção works e as linguagens, mostrar as habilidades na seção skills e as formas de contato na seção contacts',
         skillsUtilizadas: [
                             <FontAwesomeIcon icon={faHtml5} className='icon html'/>, 
