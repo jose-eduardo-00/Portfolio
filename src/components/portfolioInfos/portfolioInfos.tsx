@@ -3,6 +3,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faCss3Alt, faGitAlt, faHtml5, faInstagram, faJs, faReact, faSass, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import pokedex from '../../assets/pokedex-desktop-img.png'
 
 
 const skills = [
@@ -91,7 +92,7 @@ const projects = [
         name: 'Pokedex',
         linkGHPages: 'https://jose-eduardo-00.github.io/quest-react-avancado-pokemon/',
         linhkRepositorio: 'https://github.com/jose-eduardo-00/quest-react-avancado-pokemon.git',
-        img: <img src="./src/assets/pokedex-desktop-img.png" alt="Foto do projeto Pokedex" className='project-img'></img>,
+        img: <img src={pokedex} alt="Foto do projeto Pokedex" className='project-img'></img>,
         text: 'Está aplicação mostra uma lista que inicialmente tem 10 cards de pokemons clicáveis mas que pode aumentar caso o usuário solicite, e ao clicar em um card o usuário é direcionado para uma seção para obter mais informações do pokemon do card clicado',
         skillsUtilizadas: [
                             <FontAwesomeIcon icon={faHtml5} className='icon html'/>, 
@@ -106,7 +107,7 @@ const projects = [
         name: 'Portfolio',
         linkGHPages: 'https://jose-eduardo-00.github.io/Portfolio/',
         linhkRepositorio: 'https://github.com/jose-eduardo-00/Portfolio.git',
-        img: <img src="/src/assets/portfolio-desktop-img.png" alt="Foto do projeto Portfolio" className='project-img'></img>,
+        img: <img src="./src/assets/portfolio-desktop-img.png" alt="Foto do projeto Portfolio" className='project-img'></img>,
         text: 'Este é um portfólio web que visa apresentar e mostrar algumas informações sobre o seus autor José Eduardo na seção about, mostrar os seus principais projetos e suas informações na seção works e as linguagens, mostrar as habilidades na seção skills e as formas de contato na seção contacts',
         skillsUtilizadas: [
                             <FontAwesomeIcon icon={faHtml5} className='icon html'/>, 
