@@ -16,8 +16,8 @@ function menuHamburguer() {
         e.classList.toggle('active')
     })
 
-    const navigation: any = document.querySelector('.navigation')
-    navigation.classList.toggle('mobile')
+    const navigation: HTMLElement | null = document.querySelector('.navigation')
+    navigation?.classList.toggle('mobile')
 }
 
 export { hoverUnderline, menuHamburguer }

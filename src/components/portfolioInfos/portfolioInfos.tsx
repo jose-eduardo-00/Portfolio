@@ -10,7 +10,7 @@ import pokeApiIcon from '../../assets/pokeapi-icon.png'
 import portfolioImg from '../../assets/portfolio-desktop-img.png'
 import githubApiImg from '../../assets/api-github-desktop-img.png'
 import githubApiIcon from '../../assets/githubapi-icon.png'
-import imgTest from '../../assets/img-test.png'
+import adamLettering from '../../assets/adam_lettering_desktop.png'
 
 
 const skills = [
@@ -139,16 +139,19 @@ const projects = [
                           ]
     },
     {
-        name: 'Pizzaria',
-        linkGHPages: '#',
-        linhkRepositorio: '#',
-        img: <img src={imgTest} alt="Foto do projeto Pizzaria" className='project-img'></img>,
-        text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur temporibus recusandae debitis corporis ut, natus neque deserunt maiores adipisci tenetur magnam ipsam magni a inventore assumenda beatae eos accusantium quidem!',
+        name: 'Adam Lettering',
+        linkGHPages: 'https://jose-eduardo-00.github.io/adam_lettering/',
+        linhkRepositorio: 'https://github.com/jose-eduardo-00/adam_lettering.git',
+        img: <img src={adamLettering} alt="Foto do projeto Pizzaria" className='project-img'></img>,
+        text: 'Está é uma aplicação feita para um ilustrador que mostrar e vender o seu trabalho, como uma seção home apresentando o site, uma seção portfolio com os trabalho do ilustrador, uma seção orçamento explicando como solicitar um orçamento para algum trabalho e uma seção sobre contando um pouco sobre o ilustrador.',
         skillsUtilizadas: [
-                            <img src="https://placehold.co/80x80" alt="Linguagens usadas no projeto"></img>, 
-                            <img src="https://placehold.co/80x80" alt="Linguagens usadas no projeto"></img>,
-                            <img src="https://placehold.co/80x80" alt="Linguagens usadas no projeto"></img>
-                          ]
+                            <FontAwesomeIcon icon={faHtml5} className='icon html'/>, 
+                            <FontAwesomeIcon icon={faCss3Alt} className='icon css' />,
+                            <FontAwesomeIcon icon={faJs} className='icon js' />,
+                            <FontAwesomeIcon icon={faReact} className='icon react' />,
+                            <img src={typescriptIcon} alt='icone do ts' className='icon ts' />,
+                            <FontAwesomeIcon icon={faSass} className='icon sass' />
+                          ] 
     }
 ]
 

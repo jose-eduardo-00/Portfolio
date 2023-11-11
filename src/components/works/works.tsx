@@ -7,7 +7,7 @@ const Works = () => {
             <CardProject name='Pokedex' />
             <CardProject name='API GitHub' />
             <CardProject name='Portfolio' />
-            <CardProject name='Pizzaria'/>
+            <CardProject name='Adam Lettering'/>
         </section>
     )
 }
