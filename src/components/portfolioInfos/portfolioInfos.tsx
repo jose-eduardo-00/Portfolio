@@ -115,7 +115,7 @@ const projects = [
         linkGHPages: 'https://jose-eduardo-00.github.io/Portfolio/',
         linhkRepositorio: 'https://github.com/jose-eduardo-00/Portfolio.git',
         img: <img src={portfolioImg} alt="Foto do projeto Portfolio" className='project-img'></img>,
-        text: 'Este é um portfólio web que visa apresentar e mostrar algumas informações sobre o seus autor José Eduardo na seção about, mostrar os seus principais projetos e suas informações na seção works e as linguagens, mostrar as habilidades na seção skills e as formas de contato na seção contacts',
+        text: 'Este é um portfólio web que visa apresentar e mostrar algumas informações sobre o seu autor José Eduardo, a seção works apresenta os principais projetos com uma breve descrição em texto e as linguagens utilizadas, a seção skills apresenta as tecnologias de conhecimento do autor e na seção contacts estão as formas de contato',
         skillsUtilizadas: [
                             <FontAwesomeIcon icon={faHtml5} className='icon html'/>, 
                             <FontAwesomeIcon icon={faCss3Alt} className='icon css' />,
@@ -130,7 +130,7 @@ const projects = [
         linkGHPages: 'https://jose-eduardo-00.github.io/Quest-API-GitHub/',
         linhkRepositorio: 'https://github.com/jose-eduardo-00/Quest-API-GitHub.git',
         img: <img src={githubApiImg} alt="Foto do projeto API do GitHub" className='project-img'></img>,
-        text: 'Está é uma aplicação que mostrar um input e botão buscar para procurar um usuário do GitHub através do seu nome de usuário, e apresenta na tela as informações do usuário buscado, os 10 primeiros repositórios e os seus 10 últimos eventos',
+        text: 'Está é uma aplicação que mostra um input e um botão buscar para procurar um usuário do GitHub através do seu nome de usuário, e apresenta na tela as informações do usuário buscado, os 10 primeiros repositórios e os seus 10 últimos eventos',
         skillsUtilizadas: [
                             <FontAwesomeIcon icon={faHtml5} className='icon html'/>, 
                             <FontAwesomeIcon icon={faCss3Alt} className='icon css' />,
@@ -143,7 +143,7 @@ const projects = [
         linkGHPages: 'https://jose-eduardo-00.github.io/adam_lettering/',
         linhkRepositorio: 'https://github.com/jose-eduardo-00/adam_lettering.git',
         img: <img src={adamLettering} alt="Foto do projeto Pizzaria" className='project-img'></img>,
-        text: 'Está é uma aplicação feita para um ilustrador que mostrar e vender o seu trabalho, como uma seção home apresentando o site, uma seção portfolio com os trabalho do ilustrador, uma seção orçamento explicando como solicitar um orçamento para algum trabalho e uma seção sobre contando um pouco sobre o ilustrador.',
+        text: 'Está é uma aplicação feita para um ilustrador que busca mostrar e vender o seu trabalho, com uma seção home apresentando o site, uma seção portfolio com os trabalho do ilustrador, uma seção orçamento explicando como solicitar um orçamento para algum trabalho e uma seção sobre contando um pouco sobre o ilustrador.',
         skillsUtilizadas: [
                             <FontAwesomeIcon icon={faHtml5} className='icon html'/>, 
                             <FontAwesomeIcon icon={faCss3Alt} className='icon css' />,
