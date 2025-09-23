@@ -1,30 +1,47 @@
 .about {
-    background-color: var(--secondary);
-    color: var(--alcohol);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px 0 100px 0;
+  background-color: var(--secondary);
+  background-image: radial-gradient(
+      circle 50px at 15% 30%,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ),
+    radial-gradient(
+      circle 50px at 90% 85%,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ),
+    radial-gradient(
+      circle 50px at 50% 40%,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
 
-    p {
-        max-width: 550px;
-        font-size: 20px;
-        font-family: 'Poppins-Light';
-    }
+  background-repeat: no-repeat;
+  color: var(--alcohol);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0 100px 0;
 
-    img {
-        max-width: 300px;
-        max-height: 500px;
-        border-radius: 10px;
-    }
+  p {
+    max-width: 550px;
+    font-size: 20px;
+    font-family: "Poppins-Light";
+  }
+
+  img {
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 426px) {
-    .about {
-        p {
-            max-width: 90%;
-        }
+  .about {
+    p {
+      max-width: 90%;
     }
+  }
 }

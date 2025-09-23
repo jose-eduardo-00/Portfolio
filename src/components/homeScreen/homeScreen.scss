@@ -1,47 +1,69 @@
 .home-screen {
-    background-color: var(--secondary);
-    height: 100vh;
+  background-color: var(--secondary);
+  background-image: radial-gradient(
+      circle 50px at 15% 30%,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ),
+    radial-gradient(
+      circle 50px at 90% 85%,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ),
+    radial-gradient(
+      circle 50px at 5% 90%,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ),
+    radial-gradient(
+      circle 50px at 50% 40%,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
 
-    main {
-        height: 80%;
+  background-repeat: no-repeat;
+  height: 100vh;
 
-        .home-screen-presentation {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            
-            h2 {
-                font-size: 35px;
-                font-family: 'Poppins-Bold', sans-serif;
-                color: var(--ruby);
-                text-shadow: 0 0 0.2em var(--ruby);
-                
-                span {
-                    font-family: 'Poppins-Bold', sans-serif;
-                    font-size: 25px;
-                    text-shadow: none;
-                    color: var(--alcohol);
-                }
-            }
-            
-            .name {
-                color: var(--alcohol);
-                font-size: 60px;
-                font-family: 'Poppins-Black', sans-serif;
-            }
+  main {
+    height: 80%;
+
+    .home-screen-presentation {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        font-size: 35px;
+        font-family: "Poppins-Bold", sans-serif;
+        color: var(--ruby);
+        text-shadow: 0 0 0.2em var(--ruby);
+
+        span {
+          font-family: "Poppins-Bold", sans-serif;
+          font-size: 25px;
+          text-shadow: none;
+          color: var(--alcohol);
         }
+      }
+
+      .name {
+        color: var(--alcohol);
+        font-size: 60px;
+        font-family: "Poppins-Black", sans-serif;
+      }
     }
+  }
 }
 
 @media (max-width: 426px) {
-    .home-screen {
-        padding-bottom: 80px;
+  .home-screen {
+    padding-bottom: 80px;
 
-        .home-screen-presentation {
-            text-align: center;
-            padding: 6px;
-        }
+    .home-screen-presentation {
+      text-align: center;
+      padding: 6px;
     }
+  }
 }

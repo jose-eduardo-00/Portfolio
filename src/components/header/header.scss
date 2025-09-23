@@ -1,124 +1,128 @@
 .header {
-    background-color: var(--primary);
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    .navigation {
-        font-family: 'Poppins-Bold', sans-serif;
-        
-        ul {
-            display: flex;
-            gap: 30px;
-            
-            li {
-                color: var(--alcohol);    
-                font-size: 24px;
-                
-                a {
-                    padding-bottom: 3px;
-                    position: relative;
-                }
+  background-color: var(--secondary);
+  background-image: radial-gradient(
+    circle 50px at 85% 30%,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
 
-                .underline::before {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    animation: underlineWidth .4s;
-                    height: 2px;
-                    bottom: 0;
-                    left: 0;
-                    background-color: var(--alcohol);
-                }
+  background-repeat: no-repeat;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
-                @keyframes underlineWidth {
-                    0% {
-                        width: 0;
-                    }50% {
-                        width: 100%;
-                    }
-                }
-            }
+  .navigation {
+    font-family: "Poppins-Bold", sans-serif;
 
-            
+    ul {
+      display: flex;
+      gap: 30px;
+
+      li {
+        color: var(--alcohol);
+        font-size: 24px;
+
+        a {
+          padding-bottom: 3px;
+          position: relative;
         }
+
+        .underline::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          animation: underlineWidth 0.4s;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: var(--alcohol);
+        }
+
+        @keyframes underlineWidth {
+          0% {
+            width: 0;
+          }
+          50% {
+            width: 100%;
+          }
+        }
+      }
     }
+  }
 }
 
 @media (max-width: 426px) {
-    .header {
+  .header {
+    .menu-hamburguer {
+      position: absolute;
+      top: 50px;
+      right: 15px;
 
-        .menu-hamburguer {
-            position: absolute;
-            top: 50px;
-            right: 15px;
-            
-            .hamburguer {
-                background-color: var(--alcohol);
-                width: 30px;
-                height: 3px;
-                border-radius: 10px;
-                transition: .5s ease-in-out;
+      .hamburguer {
+        background-color: var(--alcohol);
+        width: 30px;
+        height: 3px;
+        border-radius: 10px;
+        transition: 0.5s ease-in-out;
 
-                &.before {
-                    background-color: var(--alcohol);
-                    position: absolute;
-                    top: -10px;
-                    width: 30px;
-                    height: 3px;
-                }
-
-                &.after {
-                    background-color: var(--alcohol);
-                    position: absolute;
-                    top: 10px;
-                    width: 30px;
-                    height: 3px;
-                }
-
-                &.middle.active {
-                    opacity: 0;
-                }
-
-                &.before.active {
-                    top: 0;
-                    transform: rotate(45deg);
-                }
-
-                &.after.active {
-                    top: 0;
-                    transform: rotate(-45deg);
-                }
-            }
-
+        &.before {
+          background-color: var(--alcohol);
+          position: absolute;
+          top: -10px;
+          width: 30px;
+          height: 3px;
         }
 
-        .navigation {
-            visibility: hidden;
-            height: 50px;
-            transition: .2s ease-in-out;
-            overflow-y: hidden;
-
-            ul {
-                flex-wrap: wrap;
-                text-align: left;
-                justify-content: center;
-                
-                li {
-                    width: 100px;
-                    margin-right: 15px;
-                }
-            }
+        &.after {
+          background-color: var(--alcohol);
+          position: absolute;
+          top: 10px;
+          width: 30px;
+          height: 3px;
         }
 
-        .mobile {
-            transition: .4s ease-in-out;
-            visibility: visible;
-            overflow-y: hidden;
-            height: 100px;
+        &.middle.active {
+          opacity: 0;
         }
+
+        &.before.active {
+          top: 0;
+          transform: rotate(45deg);
+        }
+
+        &.after.active {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+      }
     }
+
+    .navigation {
+      visibility: hidden;
+      height: 50px;
+      transition: 0.2s ease-in-out;
+      overflow-y: hidden;
+
+      ul {
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: center;
+
+        li {
+          width: 100px;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .mobile {
+      transition: 0.4s ease-in-out;
+      visibility: visible;
+      overflow-y: hidden;
+      height: 100px;
+    }
+  }
 }
 
 // fazer esse header aparecer por cima sem empurrar os elementos

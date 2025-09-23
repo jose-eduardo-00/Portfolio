@@ -1,20 +1,17 @@
 .cv {
-    position: fixed;
-    z-index: 10;
-    right: 20px;
-    bottom: 20px;
-    color: var(--alcohol);
-    background-color: var(--secondaryRuby);
-    padding: 10px 20px;
-    border: 1px solid var(--secondaryRuby);
-    border-radius: 10px;
-    font-family: 'Poppins-black';
-    font-size: 20px;
-    box-shadow: 0px 0px 14px 4px var(--primary);
-    transition: all .6s;
-    cursor: pointer;
+  color: var(--alcohol);
+  background-color: var(--secondaryRuby);
+  padding: 10px 20px;
+  border: 1px solid var(--secondaryRuby);
+  border-radius: 10px;
+  font-family: "Poppins-black";
+  font-size: 20px;
+  box-shadow: 0px 0px 14px 4px var(--primary);
+  transition: all 0.6s;
+  cursor: pointer;
+  margin-top: -10px;
 
-    &:hover {    
-        box-shadow: 0px 0px 10px 4px var(--secondaryRuby);
-    }
+  &:hover {
+    box-shadow: 0px 0px 10px 4px var(--secondaryRuby);
+  }
 }
