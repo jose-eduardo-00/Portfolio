@@ -33,10 +33,10 @@
           position: absolute;
           width: 100%;
           animation: underlineWidth 0.4s;
-          height: 2px;
-          bottom: 0;
+          height: 4px;
+          bottom: -2px;
           left: 0;
-          background-color: var(--alcohol);
+          background-color: var(--secondaryRuby);
         }
 
         @keyframes underlineWidth {
