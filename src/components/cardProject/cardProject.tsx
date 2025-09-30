@@ -1,33 +1,52 @@
-import { projects } from '../portfolioInfos/portfolioInfos'
-import './cardProject.scss'
+import "./cardProject.scss";
 
 interface ICardProject {
-    name: string
+  project: {
+    name: string;
+    linkGHPages: string;
+    linhkRepositorio: string;
+    img: JSX.Element;
+    text: string;
+    skillsUtilizadas: JSX.Element[];
+  };
 }
 
-const CardProject = ({ name }: ICardProject) => {
-    return (
-        projects.map((e, index) => {
-            if (e.name === name) {
-                return (
-                    <section className="project-card" key={index}>
-                        <h1 className='project-title'>{e.name}</h1>
-                        <div className='div-anchor'>
-                            <a href={e.linkGHPages} target='_blank' className='pages-anchor'>Link do GitHub Pages</a>
-                            <a href={e.linhkRepositorio} target='_blank' className='repository-anchor'>Link do Repositório</a>
-                        </div>
-                        {e.img}
-                        <p className='project-text-about'>{e.text}</p>
-                        <div className='project-languages'>
-                            {e.skillsUtilizadas.map((a, index) => {
-                                return <div key={index}>{a}</div>
-                            })}
-                        </div>
-                    </section>
-                )
-            }
-        })
-    )
-}
+const CardProject = ({ project }: ICardProject) => {
+  return (
+    <div className="project-card">
+      <div className="project-info">
+        <h1 className="project-title">{project.name}</h1>
 
-export { CardProject }
+        <p className="project-text-about">{project.text}</p>
+
+        <div className="project-languages">
+          {project.skillsUtilizadas.map((skill, index) => (
+            <div key={index}>{skill}</div>
+          ))}
+        </div>
+      </div>
+      <div className="project-image">
+        {project.img}
+
+        <div className="div-anchor">
+          <a
+            href={project.linkGHPages}
+            target="_blank"
+            className="pages-anchor"
+          >
+            Link do Site
+          </a>
+          <a
+            href={project.linhkRepositorio}
+            target="_blank"
+            className="repository-anchor"
+          >
+            Link do Repositório
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export { CardProject };

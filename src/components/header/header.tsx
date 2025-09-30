@@ -17,11 +17,11 @@ const Header = () => {
       </div>
       <nav className="navigation">
         <ul>
-          <li>
+          {/* <li>
             <a href="#about" className="hover-underline">
               About
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#works" className="hover-underline">
               Works
