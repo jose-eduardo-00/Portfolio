@@ -11,6 +11,7 @@ import {
   faWhatsapp,
   faVuejs,
   faBootstrap,
+  faNode,
 } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
@@ -23,6 +24,10 @@ import githubApiImg from "../../assets/api-github-desktop-img.png";
 import githubApiIcon from "../../assets/githubapi-icon.png";
 import adamLettering from "../../assets/adam_lettering_desktop.png";
 import planilhasImg from "../../assets/planilhasImg.png";
+import tailwindoIcon from "../../assets/tailwindIcon.png";
+import prismaIcon from "../../assets/prismaIcon.png";
+import mysqlIcon from "../../assets/mysqlIcon.png";
+import postgresqlIcon from "../../assets/postgresqlIcon.png";
 
 const skills = [
   {
@@ -46,6 +51,11 @@ const skills = [
     icon: <FontAwesomeIcon icon={faReact} className="icon react" />,
   },
   {
+    name: "Vue Js",
+    text: "O Vue.js é um framework progressivo para construção de interfaces de usuário. Ao contrário de outros frameworks monolíticos, o Vue foi projetado desde o início para ser adotado de forma incremental. A biblioteca central se concentra apenas na camada de visualização, e é fácil de integrar com outras bibliotecas ou projetos existentes.",
+    icon: <FontAwesomeIcon icon={faVuejs} className="icon vue" />,
+  },
+  {
     name: "TypeScript",
     text: "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft que é uma extensão do JavaScript. Ela adiciona recursos avançados ao JavaScript, como a tipagem estática e interfaces, tornando mais fácil detectar e prevenir erros durante a fase de desenvolvimento.",
     icon: <img src={typescriptIcon} alt="icone do ts" className="icon ts" />,
@@ -54,6 +64,22 @@ const skills = [
     name: "Sass",
     text: "O SASS é um pré-processador CSS que adiciona recursos que não estão desponíveis no CSS como variáveis, mixins, funções e operações e outras opções. O SASS tem como objetivo tornar o processo de desenvolvimento mais simples e eficiente.",
     icon: <FontAwesomeIcon icon={faSass} className="icon sass" />,
+  },
+  {
+    name: "Bootstrap",
+    text: "O Bootstrap é um framework front-end popular para desenvolvimento de sites responsivos e móveis. Ele fornece uma coleção de ferramentas e componentes prontos para uso, como grids, botões e formulários, que facilitam a criação de layouts modernos e atraentes.",
+    icon: <FontAwesomeIcon icon={faBootstrap} className="icon bootstrap" />,
+  },
+  {
+    name: "Tailwind",
+    text: "O Tailwind CSS é um framework CSS utilitário que permite criar designs personalizados diretamente em seu HTML. Em vez de fornecer componentes prontos, o Tailwind oferece classes utilitárias que podem ser combinadas para construir qualquer design, tornando-o altamente flexível e adaptável.",
+    icon: (
+      <img
+        src={tailwindoIcon}
+        alt="icone do tailwind"
+        className="icon tailwind"
+      />
+    ),
   },
   {
     name: "Styled Components",
@@ -74,6 +100,34 @@ const skills = [
     name: "GitHub",
     text: "GitHub é uma plataforma de hospedagem de códigos de projetos usando o sistema de controle de versão chamado Git. Ele permite que desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso.",
     icon: <FontAwesomeIcon icon={faGithub} className="icon github" />,
+  },
+  {
+    name: "Prisma",
+    text: "O Prisma é uma ferramenta de ORM (Object-Relational Mapping) para Node.js e TypeScript. Ele simplifica o acesso a bancos de dados, permitindo que os desenvolvedores interajam com os dados usando uma API intuitiva e tipada. O Prisma suporta vários bancos de dados, como PostgreSQL, MySQL e SQLite, e oferece recursos como migrações automáticas e geração de código.",
+    icon: (
+      <img src={prismaIcon} alt="icone do prisma" className="icon prisma" />
+    ),
+  },
+  {
+    name: "Node Js",
+    text: "Node.js é um ambiente de execução JavaScript do lado do servidor, baseado no motor V8 do Google Chrome. Ele permite que os desenvolvedores criem aplicações web escaláveis e de alto desempenho usando JavaScript no backend. O Node.js é conhecido por sua arquitetura orientada a eventos e seu modelo de I/O não bloqueante, o que o torna ideal para aplicações em tempo real e com alta concorrência.",
+    icon: <FontAwesomeIcon icon={faNode} className="icon node" />,
+  },
+  {
+    name: "MySQL",
+    text: "O MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto. Ele é amplamente utilizado para armazenar e gerenciar dados em aplicações web e é conhecido por sua robustez, escalabilidade e desempenho. O MySQL suporta a linguagem SQL (Structured Query Language) para consulta e manipulação de dados, e é uma escolha popular para aplicações que requerem um banco de dados relacional.",
+    icon: <img src={mysqlIcon} alt="icone do mysql" className="icon mysql" />,
+  },
+  {
+    name: "PostgreSQL",
+    text: "O PostgreSQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto. Ele é conhecido por sua robustez, escalabilidade e conformidade com padrões. O PostgreSQL suporta uma ampla gama de tipos de dados e oferece recursos avançados como transações ACID, consultas complexas e extensibilidade. É uma escolha popular para aplicações que requerem um banco de dados relacional poderoso e flexível.",
+    icon: (
+      <img
+        src={postgresqlIcon}
+        alt="icone do postgresql"
+        className="icon postgresql"
+      />
+    ),
   },
 ];
 
@@ -132,6 +186,38 @@ const projects = [
         className="icon bootstrap"
         style={{ color: "#563D7C" }}
       />,
+    ],
+  },
+  {
+    name: "Planilhas Backend",
+    linkGHPages: "https://planilha-fe-production.up.railway.app",
+    linhkRepositorio: "https://github.com/jose-eduardo-00/planilhas-app",
+    img: (
+      <img
+        src={planilhasImg}
+        alt="Foto do projeto Planilhas"
+        className="project-img"
+      ></img>
+    ),
+    text: "Este é um projeto backend do site das planilhas que possibilita a criação, edição, exclusão e visualização de planilhas, com funcionalidades como adicionar/remover linhas e colunas, editar células, aplicar formatação básica e salvar automaticamente as alterações.",
+    skillsUtilizadas: [
+      <img
+        src={prismaIcon}
+        alt="Linguagens usadas no projeto Prisma"
+        className="icon prisma"
+      ></img>,
+      <FontAwesomeIcon
+        icon={faNode}
+        className="icon node"
+        style={{ color: "#8CC84B" }}
+      />,
+      <FontAwesomeIcon icon={faJs} className="icon js" />,
+      <img src={typescriptIcon} alt="icone do ts" className="icon ts" />,
+      <img
+        src={mysqlIcon}
+        alt="Linguagens usadas no projeto Mysql"
+        className="icon mysql"
+      ></img>,
     ],
   },
   {

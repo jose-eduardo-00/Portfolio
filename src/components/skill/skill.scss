@@ -1,89 +1,103 @@
 .skill-div {
-    max-width: 360px;
-    min-height: 530px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    gap: 30px;
-    transition: all .6s ease-in-out;
-    box-shadow: 0px 0px 14px 4px var(--primary);
+  max-width: 360px;
+  min-height: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  gap: 30px;
+  transition: all 0.6s ease-in-out;
+  box-shadow: 0px 0px 14px 4px var(--primary);
+  border-radius: 10px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
     border-radius: 10px;
+    padding: 5px;
+    background-color: var(--secondary);
+    box-shadow: 0px 0px 14px 4px var(--primary);
 
-    &:hover {
-        transform: scale(1.1);
+    &.html {
+      color: #e44810;
     }
 
-    .icon {
-        width: 80px;
-        height: 80px;
-        border-radius: 10px;
-        padding: 5px;
-        background-color: var(--secondary);
-        box-shadow: 0px 0px 14px 4px var(--primary);
-
-        &.html {
-            color: #e44810;
-        }
-
-        &.css {
-            color: #0099ff;
-        }
-
-        &.js {
-            color: #FFD600;
-        }
-
-        &.react {
-            color: #4ddbff;
-        }
-
-        &.ts {
-            width: 90px;
-            height: 90px;
-        }
-
-        &.sass {
-            color: #F06292;
-        }
-
-        &.styled {
-            width: 90px;
-            height: 90px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-        }
-
-        &.jest {
-            width: 90px;
-            height: 90px;
-            color: #FC573B;
-        }
-
-        &.git {
-            color: #F4511E;
-        }
-
-        &.github {
-            color: var(--alcohol);
-        }
+    &.css {
+      color: #0099ff;
     }
 
-    .skill-title {
-        color: var(--alcohol);
-        text-shadow: 0 0 0.2em var(--ruby);
-        font-family: 'Poppins-bold';
-        font-size: 25px;
-        border-radius: 10px;
+    &.js {
+      color: #ffd600;
     }
 
-    .skill-text {
-        width: 80%;
-        color: var(--alcohol);
-        font-family: 'Poppins-Light';
-        text-align: center;
-        font-size: 16px;
+    &.react {
+      color: #4ddbff;
     }
+    &.vue {
+      color: #42b883;
+    }
+
+    &.ts {
+      width: 90px;
+      height: 90px;
+    }
+
+    &.sass {
+      color: #f06292;
+    }
+
+    &.bootstrap {
+      color: #7a0cf5;
+    }
+
+    &.tailwind {
+      color: #38bdf8;
+    }
+
+    &.styled {
+      width: 90px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+    }
+
+    &.jest {
+      width: 90px;
+      height: 90px;
+      color: #fc573b;
+    }
+
+    &.git {
+      color: #f4511e;
+    }
+
+    &.github {
+      color: var(--alcohol);
+    }
+    &.node {
+      color: #83cd29;
+    }
+  }
+
+  .skill-title {
+    color: var(--alcohol);
+    text-shadow: 0 0 0.2em var(--ruby);
+    font-family: "Poppins-bold";
+    font-size: 25px;
+    border-radius: 10px;
+  }
+
+  .skill-text {
+    width: 80%;
+    color: var(--alcohol);
+    font-family: "Poppins-Light";
+    text-align: center;
+    font-size: 16px;
+  }
 }
